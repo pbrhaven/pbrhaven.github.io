@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="rgba(23, 26, 33, 0.9)">
+    <link rel="icon" type="image/jpeg" href="/icon.jpg">
+    <title>Material Preview - PBR Haven</title>
+    <link rel="stylesheet" href="/style.css">
+    <style>
+        /* Additional or overriding styles specific to the preview page */
+        body {
+            background-color: #1B2838; /* Match the background color of your main page */
+        }
+
+        .material-preview-container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: rgba(23, 26, 33, 0.8);
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            color: #C7D5E0;
+        }
+
+        .material-preview-container img {
+            width: 100%;
+            max-height: 400px;
+            object-fit: contain;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .material-preview-container h2 {
+            font-size: 2em;
+            margin-bottom: 10px;
+            color: #66C0F4;
+        }
+
+        .material-preview-container p {
+            font-size: 1.1em;
+            line-height: 1.6;
+        }
+
+        .material-preview-container a {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 24px;
+            background: linear-gradient(to bottom right, #66C0F4, #2A475E);
+            color: #FFF;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background-color 0.3s;
+        }
+
+        .material-preview-container a:hover {
+            background-color: #218838; /* Darker green (adjust as needed) */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to PBR Haven</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Materials</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <input type="text" id="search" placeholder="Search...">
+    </header>
+
+    <div class="material-preview-container">
+        <img src="path/to/material-preview.jpg" alt="Material Preview">
+        <h2>Material Name</h2>
+        <p>Description of the material goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis libero ac enim consectetur laoreet.</p>
+        <a href="#">Download Material</a>
+        <a href="#">Using Godot</a>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 PBR Haven. All rights reserved.</p>
+    </footer>
+
+    <!-- You can include your main JavaScript file here if needed -->
+    <script src="/main.js"></script>
+</body>
+</html>

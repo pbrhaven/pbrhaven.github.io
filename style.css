@@ -1,0 +1,183 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #1B2838;
+    color: #C7D5E0;
+    line-height: 1.6;
+    -webkit-tap-highlight-color: transparent; /* Disable tap highlight */
+}
+
+header {
+    background-color: rgba(23, 26, 33, 0.9); /* Default background color with transparency */
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    backdrop-filter: blur(10px);
+    transition: background-color 0.3s;
+}
+
+header h1 {
+    font-size: 1.8em;
+    color: #66C0F4;
+    margin: 0;
+    flex: 1;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 15px;
+    flex: 2;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav ul li a {
+    color: #C7D5E0;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 12px 18px; /* Adjusted padding for better touch target */
+    border-bottom: 2px solid transparent; /* Transparent bottom border */
+    transition: border-color 0.3s, color 0.3s;
+}
+
+nav ul li a:hover {
+    border-color: #66C0F4; /* Matching text color */
+}
+
+#search {
+    padding: 10px 14px; /* Adjusted padding */
+    width: 200px;
+    border-radius: 8px; /* Rounded corners */
+    border: 1px solid #66C0F4;
+    background-color: rgba(23, 26, 33, 0.8);
+    color: #C7D5E0;
+    outline: none;
+    transition: border-color 0.3s, background-color 0.3s;
+}
+
+#search:focus {
+    border-color: #417A9B;
+    background-color: rgba(23, 26, 33, 0.9);
+}
+
+.hero {
+    background: linear-gradient(to bottom right, #2A475E, #1B2838);
+    padding: 60px 20px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 50%; /* Center vertically */
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.hero-content {
+    background-color: rgba(23, 26, 33, 0.8);
+    padding: 20px;
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    max-width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.hero-content h2 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    color: #66C0F4;
+}
+
+.hero-content p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    color: #C7D5E0;
+}
+
+.material-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 400px auto 0; /* Adjust margin-top to push down the material list */
+    position: relative;
+    z-index: 2;
+}
+
+.material-item {
+    background-color: rgba(23, 26, 33, 0.8);
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+    backdrop-filter: blur(10px);
+}
+
+.material-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+.material-preview {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: opacity 0.3s;
+}
+
+.material-item:hover .material-preview {
+    opacity: 0.7;
+}
+
+h3 {
+    margin: 10px 0;
+    font-size: 1.2em;
+    color: #C7D5E0;
+}
+
+p {
+    font-size: 0.9em;
+    padding: 0 10px;
+    color: #C7D5E0;
+}
+
+button.download {
+    background: linear-gradient(to bottom right, #66C0F4, #2A475E); /* Darker secondary color */
+    color: #FFF;
+    border: none;
+    padding: 14px 28px; /* Larger padding for premium feel */
+    cursor: pointer;
+    border-radius: 10px; /* Rounded corners */
+    transition: transform 0.3s, opacity 0.3s, box-shadow 0.3s;
+    margin: 15px 0;
+    outline: none; /* Remove default focus outline */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Add subtle shadow */
+}
+
+button.download:hover {
+    transform: translateY(-3px); /* Slight upward movement on hover */
+    opacity: 0.7; /* Adjusted opacity on hover */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4); /* Enhanced shadow on hover */
+}
+
+footer {
+    background-color: #171A21;
+    color: #C7D5E0;
+    text-align: center;
+    padding: 15px 20px;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+
